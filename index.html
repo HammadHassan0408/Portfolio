@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hammad Hassan · Portfolio</title>
+
+    <!-- Google Fonts: Inter & Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome 6 (Free) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+    <!-- ====== NAVBAR ====== -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#home" class="logo">
+                <i class="fas fa-code"></i> Hammad.dev
+            </a>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#services">Services</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ====== HOME / HERO ====== -->
+    <section id="home" class="container hero">
+        <div class="hero-content fade-in">
+            <div class="hero-badge">
+                <i class="fas fa-code"></i> Available for opportunities
+            </div>
+            <h1>
+                Hi, I'm <br /><span class="highlight">Hammad Hassan</span>
+            </h1>
+            <p>
+                <span class="typing-wrapper">
+                    Building Code That Solves Real Problems
+                    <span class="typing-cursor"></span>
+                </span>
+                <br />
+                <span style="font-size:0.95rem;color:var(--text-muted);">
+                    Full-Stack · Mobile · UI/UX
+                </span>
+            </p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i> View Projects
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <i class="fas fa-envelope"></i> Contact Me
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Tech Stacks</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">2026</span>
+                    <span class="stat-label">Graduation</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-image fade-in delay-2">
+            <div class="avatar-wrapper">
+                <div class="orb"></div>
+                <img src="./images/madi.jpeg" alt="Hammad Hassan" class="avatar" />
+            </div>
+            <div class="floating-badge badge-1">
+                <i class="fas fa-rocket"></i> 10+ Projects
+            </div>
+            <div class="floating-badge badge-2">
+                <i class="fas fa-code"></i> Full-Stack
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== ABOUT ====== -->
+    <section id="about" class="container section-pad">
+        <div class="section-header fade-in">
+            <h2 class="section-title">About <span class="highlight">Me</span></h2>
+            <p class="section-sub">Passionate Computer Science student building real-world solutions.</p>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-text fade-in">
+                <p>
+                    I'm <strong>Hammad Hassan</strong>, a dedicated Computer Science student at
+                    <strong>Barani Institute of Information Technology</strong> (2022 – 2026).
+                    I thrive on crafting clean, scalable, and user-centric applications
+                    across the full stack — from mobile with Flutter to backend APIs with
+                    ASP.NET Core and dynamic frontends with Flutter.
+                </p>
+                <p>
+                    My drive comes from solving complex problems with elegant code.
+                    Whether it's a real-time chat app, a custom compiler, or a multiplayer
+                    game, I enjoy the entire journey from idea to deployment.
+                </p>
+                <div class="badge-list">
+                    <span><i class="fas fa-graduation-cap"></i> BSCS 2026</span>
+                    <span><i class="fas fa-laptop-code"></i> Full-Stack</span>
+                    <span><i class="fas fa-mobile-alt"></i> Flutter</span>
+                    <span><i class="fas fa-cloud"></i> Cloud Basics</span>
+                </div>
+
+                <div class="edu-box">
+                    <h4>🎓 Education</h4>
+                    <p><strong>BSCS</strong> – Barani Institute of Information Technology</p>
+                    <div class="edu-detail">
+                        <span class="meta">2022 – 2026</span>
+                        <span class="gpa">CGPA: 3.20/4.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-skills fade-in delay-1">
+                <h3><i class="fas fa-cogs"></i> Tech Stack</h3>
+                <div class="skills-grid">
+                    <div class="skill-item"><i class="fas fa-sun"></i> Flutter</div>
+                    <div class="skill-item"><i class="fas fa-server"></i> .NET Core</div>
+                    <div class="skill-item"><i class="fab fa-java"></i> Java</div>
+                    <div class="skill-item"><i class="fab fa-python"></i> Python</div>
+                    <div class="skill-item"><i class="fas fa-code"></i> C#</div>
+                    <div class="skill-item"><i class="fas fa-moon"></i> Dart</div>
+                    <div class="skill-item"><i class="fas fa-database"></i> SQL</div>
+                    <div class="skill-item"><i class="fab fa-js"></i> JavaScript</div>
+                    <div class="skill-item"><i class="fab fa-html5"></i> HTML5</div>
+                    <div class="skill-item"><i class="fab fa-css3-alt"></i> CSS3</div>
+                    <div class="skill-item"><i class="fas fa-fire"></i> Firebase</div>
+                    <div class="skill-item"><i class="fas fa-paint-brush"></i> Figma</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== PROJECTS ====== -->
+    <section id="projects" class="container">
+        <div class="projects-section">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+                <p class="section-sub">Real-world applications built with passion and precision.</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="icon"><i class="fas fa-comments"></i></div>
+                    <h4>Chat App</h4>
+                    <p>Real-time group chat with emoji reactions, voice notes, and typing indicators.</p>
+                    <div class="tech">
+                        <span>Flutter</span><span>Firebase</span><span>WebSocket</span>
+                    </div>
+                </div>
+                <div class="project-card fade-in delay-1">
+                    <div class="icon"><i class="fas fa-tools"></i></div>
+                    <h4>Service: Handyman Request</h4>
+                    <p>Booking, scheduling, and rating platform for local service providers.</p>
+                    <div class="tech">
+                        <span>Flutter</span><span>ASP.NET</span><span>SQL</span>
+                    </div>
+                    <div class="links">
+                        <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card fade-in delay-2">
+                    <div class="icon"><i class="fas fa-cogs"></i></div>
+                    <h4>Custom Compiler (C#)</h4>
+                    <p>Lexer, parser, and code generator for a toy programming language.</p>
+                    <div class="tech">
+                        <span>C#</span><span>.NET</span><span>ANTLR</span>
+                    </div>
+                    <div class="links">
+                        <a href="https://github.com/HammadHassan0408/Custom_Compiler"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card fade-in delay-3">
+                    <div class="icon"><i class="fas fa-hospital"></i></div>
+                    <h4>Pharmacy Management</h4>
+                    <p>Inventory, sales tracking, and prescription management system.</p>
+                    <div class="tech">
+                        <span>Java</span><span>SQL Server</span><span>JavaFX</span>
+                    </div>
+                </div>
+                <div class="project-card fade-in delay-4">
+                    <div class="icon"><i class="fas fa-dice"></i></div>
+                    <h4>Multiplayer Ludo Game</h4>
+                    <p>Turn-based Ludo with TCP server communication and real-time sync.</p>
+                    <div class="tech">
+                        <span>C#</span><span>.NET</span><span>TCP/IP</span>
+                    </div>
+                    <div class="links">
+                        <a href="https://github.com/HammadHassan0408/ludo_game"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== SERVICES ====== -->
+    <section id="services" class="container section-pad">
+        <div class="section-header fade-in">
+            <h2 class="section-title">My <span class="highlight">Services</span></h2>
+            <p class="section-sub">What I can bring to your next project.</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card fade-in">
+                <i class="fas fa-mobile-alt"></i>
+                <h4>Mobile App Dev</h4>
+                <p>Cross-platform apps with Flutter & Firebase.</p>
+            </div>
+            <div class="service-card fade-in delay-1">
+                <i class="fas fa-globe"></i>
+                <h4>Web Dev & Design</h4>
+                <p>Responsive, modern web interfaces with React.</p>
+            </div>
+            <div class="service-card fade-in delay-2">
+                <i class="fas fa-server"></i>
+                <h4>Backend APIs</h4>
+                <p>RESTful & scalable APIs with ASP.NET Core.</p>
+            </div>
+            <div class="service-card fade-in delay-3">
+                <i class="fas fa-pencil-ruler"></i>
+                <h4>UI/UX Design</h4>
+                <p>Pixel-perfect prototypes in Figma.</p>
+            </div>
+            <div class="service-card fade-in delay-4">
+                <i class="fas fa-cloud-upload-alt"></i>
+                <h4>System Deployment</h4>
+                <p>Cloud deployment (AWS, Azure) & CI/CD basics.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== BLOG ====== -->
+    <section id="blog" class="container">
+        <div class="blog-section">
+            <div class="section-header fade-in">
+                <h2 class="section-title">From the <span class="highlight">Blog</span></h2>
+                <p class="section-sub">Tutorials, reflections, and tech deep-dives.</p>
+            </div>
+
+            <div class="blog-grid">
+                <div class="blog-card fade-in">
+                    <div class="thumb">
+                        <div class="overlay"></div>
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="body">
+                        <h4>Building a Custom Compiler in C#</h4>
+                        <p>A step-by-step journey from lexer to code generation.</p>
+                        <span class="tag">#Compiler</span>
+                    </div>
+                </div>
+                <div class="blog-card fade-in delay-1">
+                    <div class="thumb">
+                        <div class="overlay"></div>
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="body">
+                        <h4>Flutter vs React Native 2025</h4>
+                        <p>Which framework wins for cross-platform dev?</p>
+                        <span class="tag">#Flutter</span>
+                    </div>
+                </div>
+                <div class="blog-card fade-in delay-2">
+                    <div class="thumb">
+                        <div class="overlay"></div>
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <div class="body">
+                        <h4>Deploying .NET Apps on AWS</h4>
+                        <p>From localhost to the cloud — a beginner's guide.</p>
+                        <span class="tag">#Cloud</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== CONTACT ====== -->
+    <section id="contact" class="container contact-section">
+        <div class="section-header fade-in">
+            <h2 class="section-title">Get in <span class="highlight">Touch</span></h2>
+            <p class="section-sub">Let's connect and build something amazing together.</p>
+        </div>
+
+        <div class="contact-wrapper">
+            <!-- LEFT: Contact Info -->
+            <div class="contact-info-card fade-in">
+                <div class="info-header">
+                    <h3><i class="fas fa-address-card"></i> Contact Info</h3>
+                    <p>I'm always open to new opportunities and collaborations.</p>
+                </div>
+
+                <div class="info-item">
+                    <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                    <div class="info-text">
+                        <span class="label">Email</span>
+                        <span class="value"><a href="mailto:hammadhasssan0408@gmail.com">hammadhasssan0408@gmail.com</a></span>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="icon-box"><i class="fab fa-linkedin-in"></i></div>
+                    <div class="info-text">
+                        <span class="label">LinkedIn</span>
+                        <span class="value"><a href="https://www.linkedin.com/in/hammadhassan04/" target="_blank">@hammadhassan04</a></span>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="icon-box"><i class="fab fa-github"></i></div>
+                    <div class="info-text">
+                        <span class="label">GitHub</span>
+                        <span class="value"><a href="https://github.com/HammadHassan0408" target="_blank">@HammadHassan0408</a></span>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="icon-box"><i class="fas fa-phone-alt"></i></div>
+                    <div class="info-text">
+                        <span class="label">Phone</span>
+                        <span class="value"><a href="tel:+923171535164">+92 317 1535164</a></span>
+                    </div>
+                </div>
+
+                <div class="availability">
+                    <i class="fas fa-circle"></i> Available for freelance work
+                </div>
+
+                <div class="social-row">
+                    <a href="https://github.com/HammadHassan0408" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/hammadhassan04/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:hammadhasssan0408@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <!-- RIGHT: Contact Form -->
+            <div class="contact-form-card fade-in delay-1">
+                <div class="form-header">
+                    <h3><i class="fas fa-paper-plane"></i> Send a Message</h3>
+                    <p>Fill in the form below and I'll get back to you within 24 hours.</p>
+                </div>
+
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name <span class="required">*</span></label>
+                            <div class="input-wrap">
+                                <input type="text" id="name" placeholder="Ali Raza" required />
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <div class="input-wrap">
+                                <input type="email" id="email" placeholder="aliraza00@example.com" required />
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <div class="input-wrap">
+                            <input type="text" id="subject" placeholder="Project inquiry, collaboration, etc." />
+                            <i class="fas fa-tag"></i>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message <span class="required">*</span></label>
+                        <div class="input-wrap">
+                            <textarea id="message" placeholder="Tell me about your project or idea..." required></textarea>
+                            <i class="fas fa-pencil-alt"></i>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-submit">
+                        <span>Send Message</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="footer container">
+        <p>
+            &copy; 2026 <span>Hammad Hassan</span> · Built with
+            <span class="footer-heart">❤</span> &amp; coffee.
+        </p>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="/script.js"></script>
+</body>
+</html>
